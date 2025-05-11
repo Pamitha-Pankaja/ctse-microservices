@@ -21,6 +21,6 @@ public class OrderController {
     @PostMapping
     public ResponseEntity<String> placeOrder(@RequestBody Order order) {
         service.placeOrder(order);
-        return ResponseEntity.ok("Order placed successfully.");
+        return ResponseEntity.ok("Order placed successfully");
     }
 }
